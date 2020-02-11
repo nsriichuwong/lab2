@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<section lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,7 @@ integrity="sha256-kx16nUTlNRyEpdk7cvpnqblbDbTe/nADul9o2uYeGSw=" crossorigin="ano
 
 <!-- Theme style -->
 <link rel="stylesheet" href="./dist/css/AdminLTE.min.css">
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -153,7 +154,7 @@ integrity="sha256-kx16nUTlNRyEpdk7cvpnqblbDbTe/nADul9o2uYeGSw=" crossorigin="ano
             </ul>
           </li>
           <li class="treeview">
-            <a href="gallery.html">
+            <a href="#">
                 <i class="fa fa-heart"></i> <span>Gallery</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
@@ -387,6 +388,10 @@ crossorigin="anonymous"></script>
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-    
+<script>
+  $(document).ready(function () {
+    $('.sidebar-menu').tree()
+  })
+</script>
 </body>
 </html>
