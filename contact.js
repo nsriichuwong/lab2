@@ -1,13 +1,23 @@
 let firebaseConfig = {
-    apiKey: "AIzaSyCryy-bTZO3LDl4eDzM6fhlLuoiiEBYdtk",
-    authDomain: "lab5-8f3b4.firebaseapp.com",
-    projectId: "lab5-8f3b4",
+    apiKey: "AIzaSyDJibXERQmjx2hOOzRVinwc5Jz_kuqb1n8",
+    authDomain: "localhost",
+    projectId: "project-d471b",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 let db = firebase.firestore();
 
 $('#pass').click(() => {
+
+    // var letter = $('#Email').val();
+    // for (let index = 1 ; index < letter.length ; index++) {
+    //     if (letter.charAt(index)=="@" || letter.charAt(index)==".") {
+    //         continue
+    //     }else{
+    //         letter.replace(letter.charAt(index), "x");
+    //     }
+        
+    // }
     
     db.collection("Contact")
     .add({
@@ -97,7 +107,7 @@ db.collection('Contact').orderBy("Firstname").onSnapshot(doc =>{
                 var options = {
                   title: 'Gender',
                   titleTextStyle: {color: 'black', fontSize: 30},
-                  colors:['#EC00FF','#3055FF'] ,
+                  colors:['#f885a7','#7351b0'] ,
                   pieHole: 0.5,
                 };
         
